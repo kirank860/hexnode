@@ -1,0 +1,209 @@
+.slider {
+    background-color: #f7f7f7;
+    padding: 80px 0px;
+    position: relative;
+  }
+  
+  .slider-heading {
+    text-align: center;
+    padding: 40px 0px;
+  }
+  
+  .slider-box {
+    width: 1000px;
+    height: 330px;
+    border-radius: 20px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out; /* Smooth slide transition */
+  }
+  
+  .box-image img {
+    width: 100%;
+    max-width: 320px;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .box-details {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .box-details .description {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .box-details hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+  }
+  
+  .box-details .name {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+  }
+  
+  /* Updated slider controls */
+  .slider-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  .control-btn {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    background-color: #ffff;
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .left {
+    left: 130px;
+  }
+  
+  .right {
+    right: 130px;
+  }
+  
+
+  
+  .control-btn.left {
+    margin-left: -40px;
+  }
+  
+  .control-btn.right {
+    margin-right: -40px;
+  }
+  .icon-slider{
+    padding: 100px 0px;
+    display: flex;
+    width: 200px;
+  }
+  .icon-slider-container {
+    width: 100%; /* Full width of the container */
+    overflow: hidden; /* Hide overflow to keep it within bounds */
+    position: relative;
+  }
+  
+  .icon-slider {
+    display: flex; /* Flex for horizontal layout */
+    gap: 20px; /* Space between logos */
+    animation: scroll 5s linear infinite; /* Smooth scrolling effect */
+  }
+  
+  .icon-slider img {
+    height: 60px; /* Set logo height */
+    width: auto; /* Keep aspect ratio */
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0); /* Start position */
+    }
+    100% {
+      transform: translateX(-100%); /* End position (one full width scroll) */
+    }
+  }
+  
+  @media(max-width:1200px){
+      .box-details {
+        padding: 30px;
+      }
+    .slider-box {
+        width: 700px;
+        height: 240px;
+    
+      }
+  }
+  @media (max-width: 770px) {
+    .icon-slider{
+        padding: 30px 0px;
+    }
+    .box-image img {
+        width: 100%;
+        max-width: 400px;
+        height: 100%;
+        object-fit: cover;
+      }
+   
+    .slider-box {
+        width: 400px;
+        height: auto;
+        border-radius: 20px;
+        /* margin: 0 auto; */
+        background-color: #ffffff;
+        overflow: hidden;
+        display: block;
+        position: relative;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.5s ease-in-out; /* Smooth slide transition */
+        margin-bottom: 40px;
+    }
+    .control-btn {
+    position: absolute;
+    top: 93%;
+    transform: translateY(-50%);
+    background-color: #ffff;
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 10;
+
+  }
+  
+  .left {
+    left: 300px;
+  }
+  
+  .right {
+    right: 300px;
+  }
+  
+    
+  }
+  
+  @media (max-width:500px){
+    .box-image img {
+        width: 100%;
+        max-width: 330px;
+        height: 100%;
+        object-fit: cover;
+      }
+   
+    .slider-box {
+        width: 330px;
+        height: auto;
+        border-radius: 20px;
+        /* margin: 0 auto; */
+        background-color: #ffffff;
+        overflow: hidden;
+        display: block;
+        position: relative;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.5s ease-in-out; /* Smooth slide transition */
+        margin-bottom: 40px;
+    }
+  }

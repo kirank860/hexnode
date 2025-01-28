@@ -1,0 +1,41 @@
+.platforms{
+    margin-top: 50px;
+}
+.platforms .title{
+    text-align: center;
+}
+.platforms .images{
+    text-align: center;
+}
+.platforms .images{
+    padding: 120px 0px ;
+}
+.platforms .images img{
+    width: 200px;
+    padding: 10px;
+}
+.platforms .images img:hover {
+    animation: bounce 0.6s ease-in-out;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+  
+ @media (max-width:750px){
+    .platforms .images{
+        padding: 50px 0px ;
+    }
+    .platforms .images img{
+        width: 180px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,81 @@
+
+.footer{
+    background-color:#020A19;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+  
+  }
+  .footer-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Add space between child divs */
+    padding: 20px;
+    align-items: center; /* Center align content horizontally */
+    text-align: center; /* Center align text */
+  }
+  
+  
+  .footer-title h1{
+    color: #ffff;
+    font-size: 40px;
+  }
+  .footer-input{
+    display: flex;
+    gap: 10px;
+   align-items: center;
+   justify-content: center;
+  }
+  .footer-input input{
+    padding: 15px 50px;
+    border: none;
+    border-radius: 5px;
+  }
+  .footer-demo {
+    color: #556575;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .footer-demo p span{
+    color: red;
+  }
+.footer .btn{
+    border: none;
+    padding: 15px 40px;
+    background-color: rgb(221, 7, 53);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+@media(max-width:700px){
+  .footer-title h1{
+    color: #ffff;
+    font-size: 30px;
+  }
+  .footer-input{
+    display: block;
+    gap: 10px;
+  }
+  .footer .btn{
+    margin-top: 10px;
+    font-size: 20px;
+    display: block;
+    padding: 10px 90px;
+    background-color: rgb(221, 7, 53);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.footer-input input{
+  padding: 10px 50px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+}

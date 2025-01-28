@@ -1,0 +1,169 @@
+/* Case menu */
+.case-menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+  }
+  .cases-head{
+    text-align: center;
+    margin-top:120px ;
+  }
+  .case-menu{
+    margin-top: 50px;
+  }
+  .case-menu ul li {
+    padding: 20px 50px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #020a19;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease-in-out;
+  }
+  
+  .case-menu ul li.active {
+    background-color: #020a19;
+    color: white;
+  }
+  
+  .case-menu ul li:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+
+  
+  /* Case menu details */
+  .case-menu-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 30px;
+    gap: 20px;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+    background-color: #f7f7f7;
+  }
+  
+  /* Smooth fade-in animation for content */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .case-menu-left {
+    flex: 1;
+    max-width: 700px;
+  }
+  
+  .case-menu-details-title h1 {
+    font-size: 24px;
+    font-weight: bold;
+    transition: opacity 0.5s ease;
+  }
+  
+  .case-menu-para p {
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 1.6;
+    transition: opacity 0.5s ease;
+  }
+  
+  .case-menu-right img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+    border-radius: 8px;
+  }
+  .down-chevron{
+    display: none;
+  }
+  /* Add transition for image fading */
+  .case-menu-right img {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+  }
+  
+  /* Adding transition to paragraph opacity */
+  .case-menu-para p {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+  }
+  
+  
+  @media (max-width: 800px) {
+    .down-chevron{
+        display: block;
+      }
+    .case-menu{
+        padding: 10px 50px;
+    }
+    .case-menu ul {
+      display: block;
+      padding: 0;
+    }
+  
+    .case-menu ul li {
+      padding: 15px;
+      background-color: #f7f7f7;
+      margin: 5px 0;
+      text-align: left;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      border-radius: 4px;
+      width: 100%; /* Make each item take up full width */
+    }
+  
+    .case-menu ul li.active {
+      background-color: #020a19;
+      color: white;
+    }
+  
+    .case-menu ul li:hover {
+      background-color: #e0e0e0;
+      transform: scale(1.05);
+    }
+  }
+  .case-menu ul{
+    position: relative;
+  }
+  .down-chevron{
+    position: absolute;
+    right: 10px; 
+    /* bottom: 10px; */
+
+  }
+  @media (max-width: 800px) {
+    .case-menu-details {
+      flex-direction: column; /* Stack the content vertically */
+      align-items: center; /* Center the content */
+      /* padding: 20px 50px; */
+    }
+  
+    .case-menu-left,
+    .case-menu-right {
+      flex: none; /* Allow the content to take up its natural width */
+      width: 100%; /* Make them 100% width on smaller screens */
+      padding: 0; /* Remove padding for better spacing */
+    }
+  
+    .case-menu-details-title h1 {
+      font-size: 20px; /* Slightly smaller title */
+      text-align: center; /* Center the title */
+      margin-bottom: 15px;
+    }
+  
+    .case-menu-para p {
+      font-size: 14px; /* Smaller text size for mobile */
+    }
+  
+    .case-menu-right img {
+      width: 100%; /* Make the image responsive */
+      height: auto; /* Maintain aspect ratio */
+    }
+}

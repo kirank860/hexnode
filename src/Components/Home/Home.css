@@ -1,0 +1,151 @@
+/* Base Styles */
+.home {
+  background-color: #020A19;
+  color: white;
+}
+
+.titile h1 {
+  font-size: 40px;
+  max-width: 450px;
+  font-weight: 500;
+  color: white;
+}
+
+.input {
+  gap: 10px;
+  display: flex;
+  margin-top: 40px;
+}
+
+.input input {
+  padding: 18px 60px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+}
+
+.home-btn {
+  border: none;
+  padding: 18px 50px;
+  background-color: rgb(221, 7, 53);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(180, 0, 40);
+}
+
+.left {
+  padding: 170px 50px;
+}
+
+.right .img img {
+  width: 650px;
+}
+
+.subhome {
+  background-color: #1A1C2B;
+  padding: 30px;
+}
+
+.subhomeinner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.subhomeinner h1 {
+  color: white;
+  font-size: 35px;
+}
+
+.subhomeinner p {
+  color: rgba(255, 255, 255, 0.6); /* 60% opacity */
+  font-size: 13px;
+  max-width: 250px;
+}
+
+/* Responsive Styles */
+@media (max-width: 800px) {
+  .titile{
+    margin-top: 100px;
+  }
+  /* Adjust .col-6 to .col-12 */
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .titile h1 {
+    font-size: 40px;
+    max-width: 100%; /* Allow full width on small screens */
+  }
+
+  .input {
+    flex-direction: column; /* Stack input and button vertically */
+    gap: 10px;
+  }
+
+  .input input {
+     width: 320px;
+     padding: 15px;
+  }
+
+  .left {
+    padding: 50px 20px;
+    text-align: center; /* Center text for smaller screens */
+  }
+  .home-btn{
+    color: white;
+    background-color: rgb(221, 7, 53);
+    padding: 15px 110px;
+    border: none; border-radius: 5px;
+  }
+
+  .right .img img {
+    width: 100%;
+    max-width: 450px; /* Adjust image size for small screens */
+    margin: 0 auto; /* Center image */
+  }
+
+  .subhomeinner {
+    flex-direction: column; /* Stack subhome items vertically */
+    align-items: center;
+    gap: 40px;
+  }
+
+  .subhomeinner h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .subhomeinner p {
+    font-size: 14px;
+    text-align: center;
+    max-width: 320px; /* Allow full width for text */
+  }
+}
+
+@media (max-width: 800px) {
+
+
+  .input input {
+    padding: 18px 70px;
+
+  }
+  .home-btn {
+    border: none;
+    padding: 18px 100px;
+    background-color: rgb(221, 7, 53);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}

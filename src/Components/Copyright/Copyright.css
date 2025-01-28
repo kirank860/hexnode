@@ -1,0 +1,20 @@
+.copyright{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    padding: 10px 0px;
+  color: #020a19;
+  }
+  @media(max-width:600px){
+    .copyright {
+      width: 100%; /* or any specific width */
+      display: block; /* Add this to make sure flex properties work */
+      align-items: center;
+      justify-content: center;
+
+      text-align: center;
+    }
+  }
+  

@@ -1,0 +1,148 @@
+.deployment {
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .deployment-inner {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap; /* Allows for wrapping on smaller screens */
+    justify-content: space-between;
+  }
+  
+  .deployment-left img {
+    width: 100%; /* Make the image responsive */
+    max-width: 500px;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .deployment-head {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    justify-content: center;
+  }
+  
+  .deployment-head h1 {
+    max-width: 600px;
+    text-align: center;
+    color: black;
+  }
+  
+  .deployment-right h1 {
+    font-size: 28px;
+    padding-top: 30px;
+  }
+  
+  .deployment-right p {
+    font-size: 18px;
+    max-width: 700px;
+  }
+  
+  .deployment-right h4 {
+    color: red;
+    font-size: 18px;
+  }
+  
+  .deployment-right div {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .deployment-right div p,
+  .deployment-right div h4 {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+  }
+  
+  .deployment-right div.open p,
+  .deployment-right div.open h4 {
+    opacity: 1;
+    max-height: 200px; /* Adjust as necessary */
+  }
+  
+  .deployment-right div h1 {
+    cursor: pointer;
+  }
+  
+  .deployment-right div.open {
+    background-color: #f4f4f4; /* Optional, to highlight the open section */
+    padding: 20px;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* Mobile */
+  @media (max-width: 767px) {
+    .deployment-inner {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .deployment-left img {
+      max-width: 100%;
+    }
+  
+    .deployment-right h1 {
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    .deployment-right p {
+      font-size: 16px;
+      max-width: 100%;
+    }
+  
+    .deployment-head h1 {
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    .deployment-head {
+      padding: 15px;
+    }
+  }
+  
+  /* Tablet */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .deployment-inner {
+      flex-direction: row;
+      gap: 25px;
+    }
+  
+    .deployment-left img {
+      max-width: 50%;
+    }
+  
+    .deployment-right h1 {
+      font-size: 26px;
+    }
+  
+    .deployment-right p {
+      font-size: 17px;
+    }
+  }
+  
+  /* Desktop */
+  @media (max-width: 1025px) {
+    .deployment-inner {
+      gap: 30px;
+    }
+  
+    .deployment-left img {
+        max-width: 300px;
+        margin: 0 auto; /* This will center the image horizontally */
+        display: block; /* Ensures the image behaves like a block element */
+      }
+      
+  
+    .deployment-right h1 {
+      font-size: 20px;
+    }
+  
+    .deployment-right p {
+      font-size: 15px;
+    }
+  }
